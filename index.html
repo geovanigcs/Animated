@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/odometer.min.js"
+      integrity="sha512-51WDTV7haD9BBDc8RWH2r5TnuSiRyAqEnbGyuKHYn+qpYCrCckxFeqlr1I5UoOULijyLV2vnHO9LS4MrAzHxwQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/themes/odometer-theme-default.min.css"
+      integrity="sha512-jHurNV8IL4Q4DRHzlRaIboSWZqnA3KU6KTiRQrtU+jxE1MHxdiveHrztuHhyna6PWTE427SxNDDUqjaruirB2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+    <link rel="stylesheet" href="Style/index.css" />
+    <link rel="stylesheet" href="Style/main.css" />
+  </head>
+  <body>
+    <nav id="navbar" class="flex__center">
+      <div class="logo">
+        <i data-custom-icon="logo"></i>
+      </div>
+      <div class="flex nav__routes">
+        <a href="#header" class="route active">Home</a>
+        <a href="#About" class="route">About</a>
+        <a href="#services" class="route">Services</a>
+        <a href="#projects" class="route">projects</a>
+        <a href="#testimonials" class="route">Testimonails</a>
+        <a href="#contact" class="route">Contact</a>
+      </div>
+      <div class="flex__center">
+        <label class="theme__toggle">
+          <input type="checkbox" id="theme-checkbox" />
+          <div class="icon-container">
+            <i data-lucide="sun" class="sun"></i>
+            <i data-lucide="moon" class="moon"></i>
+          </div>
+        </label>
+        <div class="icon__container menu__btn" id="menu__btn">
+          <i data-lucide="menu"></i>
+        </div>
+      </div>
+    </nav>
+    <aside class="sidebar">
+      <div class="sidebar__wrapper">
+        <div class="flex__center top">
+          <div class="logo">
+            <i data-custom-icon="logo"></i>
+          </div>
+          <div class="icon__container" id="close-sidebar-btn">
+            <i data-lucide="x"></i>
+          </div>
+        </div>
+        <div class="middle navlinks">
+          <a href="#header" class="navitem">Home</a>
+          <a href="#About" class="navitem">About</a>
+          <a href="#services" class="navitem">Services</a>
+          <a href="#projects" class="navitem">projects</a>
+          <a href="#testimonials" class="navitem">Testimonails</a>
+          <a href="#contact" class="navitem">Contact</a>
+        </div>
+      </div>
+    </aside>
+    <section id="header" class="bg__secondary">
+      <div class="spotlight"></div>
+      <div class="container">
+        <div class="grid">
+          <div class="me">
+            <img src="assets/me.jpg" alt="" />
+          </div>
+          <div class="user__info">
+            <h2 class="sub__title">Hi 👋, I'm Geovani</h2>
+            <h1 class="title">Frontend Developer</h1>
+            <p class="description">
+              I specialize in building modern, responsive, and user-friendly web
+              interfaces. With a passion for clean code and seamless user
+              experiences, I turn ideas into digital solutions that not only
+              look great but also perform flawlessly. Let’s work together to
+              bring your vision to life!
+            </p>
+            <div class="flex buttons">
+              <div class="flex social__handles">
+                <a href="#" target="_blank" class="icon__container handle">
+                  <i data-custom-icon="fiverr"></i>
+                </a>
+                <a href="#" target="_blank" class="icon__container handle">
+                  <i data-custom-icon="github"></i>
+                </a>
+                <a href="#" target="_blank" class="icon__container handle">
+                  <i data-custom-icon="linkedin"></i>
+                </a>
+                <a href="#" target="_blank" class="icon__container handle">
+                  <i data-custom-icon="youtube"></i>
+                </a>
+              </div>
+              <a href="#contact" class="btn btn_primary">Contact Me</a>
+            </div>
+          </div>
+          <div class="points">
+            <div class="spotlight"></div>
+            <div class="point">
+              <div class="flex">
+                <div class="odometer sub__title" id="experience"></div>
+                <h3 class="sub__title">+</h3>
+              </div>
+              <p class="text__muted">Years Of Experience</p>
+            </div>
+            <div class="point">
+              <div class="flex">
+                <div class="odometer sub__title" id="project"></div>
+                <h3 class="sub__title">+</h3>
+              </div>
+              <p class="text__muted">Completed projects</p>
+            </div>
+            <div class="point">
+              <div class="flex">
+                <div class="odometer sub__title" id="awards"></div>
+                <h3 class="sub__title">🏆+</h3>
+              </div>
+              <p class="text__muted">Awards</p>
+            </div>
+            <div class="point">
+              <div class="flex">
+                <div class="odometer sub__title" id="clients"></div>
+                <h3 class="sub__title">+</h3>
+              </div>
+              <p class="text__muted">Clients Worldwide</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="container grid">
+        <div class="box self__start">
+          <div class="spotlight"></div>
+          <div class="cluster">
+            <div class="flex user">
+              <div class="profile">
+                <img src="assets/me.jpg" alt="" />
+              </div>
+              <div class="details">
+                <h4>Geovani Cordeiro</h4>
+                <p class="text__muted">Frontend Developer</p>
+              </div>
+            </div>
+            <h2 class="sub__title">
+              <span class="primary">Passionate</span> Developer and Lifelong
+              Learner
+            </h2>
+            <p class="description">
+              I adapt to different time zones to make sure communication is
+              smooth, no matter where you're located.
+            </p>
+          </div>
+          <i data-custom-icon="window" class="kit window"></i>
+        </div>
+        <div class="col-2 box">
+          <div class="spotlight"></div>
+          <div class="flex row cluster">
+            <div class="code__block">
+              <div class="flex__center dot__container">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+              <pre>
+<code>
+const developer = {
+  firstName: "Geovani",
+  lastName: "Cordeiro",
+  aka:"Gigio",
+  hobby:repeat = () => {
+    //eat()
+    //sleep()
+    //code()
+    //repeat()
+  }
+}
+</code>
+</pre>
+            </div>
+            <div class="my__drive">
+              <h2 class="sub__title">What <span class="primary">Drives Me</span></h2>
+              <p class="description"> I’m passionate about the intersection of design 🎨 and
+                development 💻. I believe the best digital experiences are built
+                with a deep understanding of the user 👤 and a commitment to
+                innovation 🌟. Whether working on a simple landing page or a
+                complex web app, I bring precision 🎯, creativity ✨, and a
+                user-first mindset to every project.</p>
+            </div>
+          </div>
+          <i data-custom-icon="grid-wire-frame" class="kit grid__wireframe"></i>
+        </div>
+        <div class="col-2 box">
+          <div class="cluster">
+
+            <div class="column">
+              <h2 class="sub__title">
+                My <span className="primary">Tech Stack</span>
+              </h2>
+              <p class="description">Always Evolving My Tech Stack
+              </p>
+            </div>
+            <div class="column stack__container">
+              <div class="flex__center btn stack">
+                <i data-custom-icon="react"></i>ReactJs
+              </div>
+              <div class="flex__center btn stack">
+                <i data-custom-icon="express"></i>ExpressJs
+              </div>
+              <div class="flex__center btn stack">
+                <i data-custom-icon="typescript"></i>Typscript
+              </div>
+              <div class="flex__center btn stack">
+                <i data-custom-icon="nextjs"></i>NextJs
+              </div>
+              <div class="flex__center btn stack">
+                <i data-custom-icon="tailwindcss"></i>TailwindCSS
+              </div>
+            </div>
+          </div>
+          <i data-custom-icon="grid" class="kit grid__box"></i>
+          <i data-custom-icon="card-ui" class="kit card__ui"></i>
+        </div>
+        <div class="box flex__center last__box">
+          <div class="cluster">
+            <h2 class="text__white sub__title">
+              I'm Committed to Collaboration and Clear Communication
+            </h2>
+            <div class="flex__center btn__wrapper">
+              <a href="#contact" class="btn">Let Collaborate</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  </body>
+</html>
